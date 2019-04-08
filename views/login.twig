@@ -1,0 +1,17 @@
+{% extends "layout.twig" %}
+
+{% block content%}
+  <form action="/platzi/auth" method="post">
+    <h1>Login</h1>
+    <div class="alert alert-primary" role="alert">
+      {{responseMessage}}
+    </div>
+    <label for="">Email:</label>
+    <input type="text" name="email"/>
+    </br>
+    <label for="">Password:</label>
+    <input type="password" name ="password"/>
+    <br>
+    <button type="submit">Save</button>
+  </form>
+{% endblock %}
